@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, main {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  position: relative;
+  background-color: rgb(1, 1, 146);
+}
+
+#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.30);
+  overflow: hidden;
+}
+
+#imagem {
+  background: black url('../imgs/paisagem.jpg') center center no-repeat;
+  background-size: cover;
+  height: 45%;
+  width: 100%;
+}
+
+#formulario {
+  width: 95%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+p {
+  text-align: left;
+}
+
+form > div {
+  margin-top: 5px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+#login-email {
+  margin-top: 20px;
+  background-color: rgb(1, 1, 146);
+}
+
+#login-senha {
+  background-color: rgb(1, 1, 146);
+}
+
+.material-icons {
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+}
+
+label {
+  display: none;
+}
+
+input {
+  width: calc(100% - 50px);
+  transform: translateY(-10px);
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(212, 212, 212);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input:focus-within {
+  background-color: white;
+  outline: 1px solid rgb(1, 1, 146);
+}
+
+input[type='submit'] {
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(1, 85, 229);
+  color: white;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: black;
+  transition-duration: .3s;
+}
+
+input[type='submit']:active {
+  background-color: white;
+  color: black;
+  transition-duration: 0s;
+}
+
+a {
+  display: block;
+  border: 1px solid rgb(1, 85, 229);
+  color: rgb(1, 85, 229);
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+#cartao {
+  color: rgb(1, 85, 229);
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#esqueci:hover > a, #esqueci:hover #cartao {
+  background-color: rgb(1, 85, 229);
+  color: white;
+  transition-duration: .3s;
+}
+
+#esqueci:active > a, #esqueci:active #cartao {
+  background-color: black;
+  color: white;
+  transition-duration: 0s;
+}
